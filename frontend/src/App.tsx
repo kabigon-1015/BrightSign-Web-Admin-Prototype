@@ -1,11 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { Header } from "./components/layout/Header";
+import { Routers } from "./routers/Routers";
 
 function App() {
   return (
     <>
-      <div className="navbar bg-base-300">
-        <button className="btn btn-ghost text-xl">画像や動画の管理</button>
-      </div>
+      <Header></Header>
+      <BrowserRouter>
+        <Routers />
+      </BrowserRouter>
     </>
   );
 }
