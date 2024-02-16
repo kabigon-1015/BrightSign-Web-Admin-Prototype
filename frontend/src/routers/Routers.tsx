@@ -4,9 +4,11 @@ import { MediaRegister } from "./MediaRegister";
 
 export const Routers = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/media-register" element={<MediaRegister />}></Route>
-    </Routes>
+    <div className="mt-4">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/media-register" element={<MediaRegister />}></Route>
+      </Routes>
+    </div>
   );
 };
